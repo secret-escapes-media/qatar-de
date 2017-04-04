@@ -263,8 +263,8 @@ ol li {
 }
 
 .content-list ul li,
-.microsite-nav li, 
-.microsite-nav-black li, 
+.microsite-nav li,
+.microsite-nav-black li,
 .site-nav li,
 .site-pre-header li {
     list-style-type: none
@@ -378,7 +378,7 @@ p+* {
 .microsite-nav,
 .microsite-nav li,
 .microsite-nav ul,
-.microsite-nav-black, 
+.microsite-nav-black,
 .microsite-nav-black li,
 .microsite-nav-black ul,
 .mobile-logo,
@@ -387,19 +387,19 @@ p+* {
     text-align: center
 }
 
-.partner-logo img {
-    display: none
-}
+/* --------- Partner logos --------- */
+.partners { display: none }
+.partners__logo { display: inline-block; height: 41px; }
+.partners__logo img { height: 100%; }
+.partners__logo + .partners__logo { margin-left: .75em; }
 
 @media (min-width:800px) {
-    .partner-logo img {
-        display: block;
-        float: right;
-        width: 230px;
-        position:absolute;
-        top: 20px;
-        right:0;
-    }
+  .partners  {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    display: block;
+  }
     .mobile-menu-logos {
         display: none
     }
