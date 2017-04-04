@@ -1,0 +1,892 @@
+/* ==========================================================================
+   WELCOME TO DARK BLUE
+============================================================================= */
+
+html, button, input, select, textarea {color: #222}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {overflow-x:hidden;}
+html {font-size: 1em; line-height: 1.4;}
+html, body {margin:0;padding:0;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif}
+.clearfix:before,.clearfix:after {content: " "; /* 1 */display: table; /* 2 */}
+.clearfix:after {clear: both;}
+/* For IE 6/7 only - Include this rule to trigger hasLayout and contain floats. */
+.clearfix {*zoom: 1;}
+/* Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440 */
+audio, canvas, img, video {vertical-align: middle;}
+/* Remove default fieldset styles */
+fieldset {border: 0; margin: 0; padding: 0;}
+ul {list-style:none}
+/* Allow only vertical resizing of textareas. */
+textarea {resize: vertical;}
+ul, li, p, h1, h2, h3, h4, h5, h6 {padding:0;margin:0;font-weight:normal;}
+li {list-style:none}
+a {text-decoration:none}
+img {max-width:100%}
+a img {border:none}
+*, *:after, *:before {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.overflow-hidden {overflow: hidden;}
+blockquote {margin: 0; padding: 0;}
+
+
+
+
+/* ==========================================================================
+   Typography
+============================================================================= */
+
+h1,h2 {
+	font-family: "Origo", "Open Sans", Helvetica, Arial, sans-serif
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform:none;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 2.4rem;
+    text-transform:none;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color:#fff;
+    line-height:1.3;
+    font-size:2rem
+}
+
+
+
+h3,h4,p,li {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif
+}
+
+h4 {
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    color: #424242;
+    font-size: 0.9rem;
+}
+
+.button {
+    background-color: #71a4d5;
+    border-radius: 3px;
+    padding:18px 30px;
+    font-size: 0.8rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#fff;
+    transition:all ease 0.3s;
+}
+
+.pagination {
+	margin-bottom: 110px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 55px;
+	border-top: 1px solid #eee;
+	padding-top: 44px;
+}
+
+.next-page {
+	float:right;
+	width:50%;
+	text-align:right
+}
+
+.back-page {
+	float:left;
+	width:50%
+}
+
+@media (max-width:700px) {
+
+.pagination a {
+	width:100%;
+	text-align:center;
+	display: inline-block;
+} 
+
+.next-page {
+	width:100%;
+	text-align:center
+}
+
+.back-page {
+	width:100%;
+	text-align:center;
+	margin-bottom: 10px;
+}
+
+.pagination {
+	margin-bottom: 40px;
+	border-bottom: none;
+	padding-bottom: 55px;
+	border-top: none;
+	padding-top: 0px;
+}
+
+}
+
+
+
+.offer .button {
+ background-color: #ff8c00;
+}
+
+.offer .button:hover {
+ background-color: #a05800;
+}
+
+
+
+.single-col {
+	max-width:700px;
+	text-align:center;
+	margin:0 auto 90px 
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
+.se-logo {
+	width: 175px;
+}
+
+@media (max-width:800px) {
+	.se-logo {
+		margin:auto
+	}
+}
+
+.microsite-nav li a {
+	color:#fff
+}
+
+.site-nav li {
+	font-size:0.8rem;
+	letter-spacing:0.5px;
+
+}
+.site-nav li a {
+	color:#afacac
+}
+
+/* ==========================================================================
+   Heroes
+   ========================================================================== */
+
+.hero {
+	width: 100%;
+	height: 60vh;
+	position: relative;
+}
+
+.hero-text-wrap {
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	overflow: auto;
+	display: table;
+}
+
+@media (max-width:1000px) {
+	.hero-text-wrap {
+		width:100%;
+	}
+}
+
+
+.hero-text {
+	/* margin-top: 200px; */
+	text-align:center;
+	position:relative;
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	padding-top: 100px;
+}
+
+.hero-text h1 {
+	margin-bottom: 4px;
+	font-size:5rem;
+	line-height: 1;
+}
+
+.hero-text h4 {
+	font-size:1.2rem;
+	margin-bottom: 22px;
+}
+
+
+
+img.play-btn {
+	width:80px
+}
+
+@media (max-width:800px) {
+	.hero-text {
+		
+	}
+}
+
+.hero-text h1,
+.hero-text h4,
+.hero-text p {
+	color:#fff
+}
+
+.hero-overview {
+	background: url(../images/bg-overview.jpg) no-repeat center/cover;
+	height: 100vh
+}
+
+.jump-to-content {
+	position:absolute;
+	bottom:100px;
+	width:100%;
+	text-align:center;
+}
+
+.jump-to-content .button {
+	transition:all ease 0.3s;
+	background-color:#71a4d5;
+	margin-bottom:0
+}
+
+.jump-to-content .button:hover {
+	background-color:#497096;
+	margin-bottom:15px
+}
+
+@media (max-width:600px) {
+.jump-to-content {
+	display:none
+}
+
+}
+
+.hero-overview .hero-text h1 {
+	position:absolute;
+	left: 0;
+	margin-top: -169px;
+	font-size: 6rem;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.hero-overview .hero-text h4.overview-p-1 {
+	position:absolute;
+	left: 136px;
+	font-size: 1.36rem;
+	margin-top: -176px;
+	font-weight: 100;
+}
+
+.hero-overview .hero-text h4.overview-p-2 {
+	position:absolute;
+	left: 201px;
+	margin-top: -80px;
+	font-size: 1.36rem;
+	font-weight: 100;
+}
+
+.hero-overview .hero-text {
+	margin-top: 400px;
+	text-align:center;
+	position:relative;
+}
+
+@media (max-width:800px) {
+	.hero-overview .hero-text {
+		margin-top: 300px;
+		text-align:center
+	}
+}
+
+.hero-overview .hero-text h1 img {
+	width: 500px;
+}
+
+@media (max-width:900px) {
+
+	.hero-overview .hero-text h1 {
+		right: 220px;
+	}
+
+	.hero-overview .hero-text h4.overview-p-1 {
+		right: 371px;
+	}
+
+	.hero-overview .hero-text h4.overview-p-2 {
+		right: 190px;
+	}
+
+}
+
+
+@media (max-width:800px) {
+
+
+
+}
+
+@media (max-width:500px) {
+
+	.hero-overview .hero-text h1 {
+		font-size: 4rem;
+	}
+
+	.hero-overview .hero-text h4.overview-p-1 {
+		position: relative;
+		font-size: 1.4rem;
+
+	}
+
+	.hero-overview .hero-text h4.overview-p-2 {
+		position: relative;
+		font-size: 1.4rem;
+		margin-top: -34px;
+		right: auto;
+		top: auto;
+	}
+
+}
+
+
+
+.hero-perth {
+	background: url(../images/bg-perth.jpg) no-repeat center/cover;
+	height: 625px
+}
+
+.hero-kustenparadiese {
+	background: url(../images/bg-kustenparadiese.jpg) no-repeat center/cover;
+	height: 625px
+}
+
+.hero-luxus-erlebnisse {
+	background: url(../images/bg-luxus-erlebnisse.jpg) no-repeat center top/cover;
+	height: 625px
+}
+
+.hero-schlaraffenland {
+	background: url(../images/bg-schlaraffenland.jpg) no-repeat center/cover;
+	height: 625px
+}
+
+.hero-qatar {
+	background: url(../images/bg-qatar.jpg) no-repeat center/cover;
+	height: 625px;
+	margin-top: 50px;
+}
+
+
+@media (max-width:600px) {
+
+	.hero-schlaraffenland,
+	.hero-perth,
+	.hero-kustenparadiese,
+	.hero-luxus-erlebnisse,
+	.hero-qatar,
+	.hero-overview	{
+		height: 325px !important
+	}
+
+	.hero-kustenparadiese {
+	background: url(../images/bg-kustenparadiese.jpg) no-repeat center right/cover;	
+	}
+
+		.hero-overview {
+	background: url(../images/bg-overview.jpg) no-repeat right top/cover;
+	margin-top: 69px;
+	}
+
+	.hero-text-wrap h1,
+	.hero-text-wrap h4 {
+		display:none
+	}
+
+}
+
+
+
+/* ==========================================================================
+   Global Elements
+   ========================================================================== */
+
+.vid { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+} 
+
+.vid iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+.content {
+	width:960px;
+	margin: 90px auto 60px;
+}
+
+@media (max-width:1100px) {
+	.content {
+		width:80%;
+		margin: 90px auto 60px;
+	}
+}
+
+@media (max-width:700px) {
+	.content {
+		width:80%;
+		margin: 60px auto 40px;
+	}
+}
+
+.col-2 {
+	width:48%;
+	float:left;
+	margin-bottom: 30px
+}
+
+.col-2:nth-child(odd) {
+	margin-right:4%
+}
+
+	@media (max-width:959px) {
+		.col-2 {
+			width:100%;
+			float:left;
+			margin-bottom: 30px
+		}
+
+		.col-2:nth-child(odd) {
+			margin-right:0%
+		}
+	}
+
+
+.intro {
+	margin-bottom: 60px;
+}
+
+.mobile-headline {
+	text-align:center;
+	margin-bottom:42px;
+	display:none
+}
+
+.overview-headline {
+	text-align:left
+}
+
+.mobile-headline h1 {
+	font-size:3.5rem;
+	line-height: 1;
+}
+
+.mobile-headline h4 {
+	font-size:1rem;
+	font-weight:600
+}
+
+@media (max-width:600px) {
+	.mobile-headline {
+		display:block
+	}
+}
+
+
+
+.tile {
+	position:relative;
+	margin-bottom: 30px;
+}
+
+.tile h2 {
+	font-size: 2.3rem;
+	/* font-weight: 600; */
+	margin-top: 42px;
+}
+
+.tile p {
+	margin: 22px 0 30px;
+}
+
+.tile p a {
+	font-weight: 900;
+	color:#71a4d5;
+	text-decoration:underline;
+	line-height: 4;
+}
+
+.tile h2.tile-headline {
+	position:absolute;
+	background-color: #71a4d5;
+	color: #fff;
+	padding: 16px 22px;
+	bottom: 15px;
+	left: -15px;
+	z-index: 9999;
+	transition: all ease-in-out 0.2s;
+	margin: 0;
+	font-size: 1rem;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:600;
+	text-transform:uppercase;
+	letter-spacing:1px
+}
+
+.tile:hover h2.tile-headline {
+	background-color: #3e5f80;
+	bottom: 25px;
+
+}
+
+.tile .img {
+	float:left;
+	width: 100%;
+	margin-right:5%;
+	position: relative;
+}
+
+.tile .text {
+	float:left;
+	width: 100%;
+}
+
+.boxes .tile .img {
+    transform: scale(1);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    width: 100%;
+}
+    .boxes .tile .img:hover {
+      transform: scale(1.02);
+    }
+
+.home-boxes .tile img {
+    transform: scale(1);
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    width: 100%;
+}
+    .home-boxes .tile img:hover {
+      transform: scale(1.02);
+    }
+
+.boxes .tile .img h4 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.39);
+	padding: 8px 16px;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+
+
+@media (max-width:680px) {
+
+	.tile h2.tile-headline {
+		font-size:1.5rem;
+		padding: 18px 22px 12px;
+	}
+
+
+	.tile:hover h2.tile-headline {
+		background-color: #3e5f80;
+		bottom:-40px;
+	}
+
+	.boxes .tile .img h4 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		color: #fff;
+		background: rgba(0, 0, 0, 0.39);
+		padding: 8px 16px;
+		font-size: 0.6rem;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+
+}
+
+.tile-play-btn {
+	position:absolute;
+	z-index:200;
+	width:100px !important;
+	top:50%;
+	left:50%;
+	margin:-50px 0 0 -50px;
+	transition:all ease 0.3s;
+	opacity: 0.4 !important;
+}
+
+    .boxes .img:hover .tile-play-btn {
+      opacity:1 !important;
+      transform: scale(1.2);
+    }
+
+
+/*============ Overview Styles ============*/
+
+.origi {
+	font-family: "Origo", "Open Sans", Helvetica, Arial, sans-serif
+}
+
+@media (max-width:600px) {
+.origi {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size:1.4rem;
+	font-weight:600;
+	line-height:1.4
+}
+}
+
+.qatar-signoff {
+	width: 100%;
+	background: url(../images/air-qatar-banner.jpg) no-repeat center ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.qatar-signoff-content-wrap {
+	width: 960px;
+	margin: auto;
+	padding: 90px 0
+}
+
+.qatar-signoff img {
+	display:none
+}
+
+.qatar-signoff p,
+.qatar-signoff h2 {
+	width: 400px;
+	color: #fff
+}
+
+.qatar-signoff h3 {
+	margin-bottom:30px
+}
+
+.qatar-signoff p {
+	margin-bottom:36px
+}
+
+.qatar-signoff .button {
+	background-color:#64003e
+}
+
+@media (max-width:1100px) {
+	.qatar-signoff-content-wrap {
+		width:80%;
+	}
+
+	.qatar-signoff {
+		width: 100%;
+		background: url(../images/air-qatar-banner.jpg) no-repeat right ;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+@media (max-width:959px) {
+	.qatar-signoff {
+		width: 100%;
+		background: #1f2242;
+	}
+
+	.qatar-signoff p,
+	.qatar-signoff h3 {
+		width: 100%;
+		color: #fff
+	}
+
+	.qatar-signoff .button {
+		background-color:#fff;
+		color:#000
+	}
+
+	.qatar-signoff img {
+		display:block
+	}
+
+	.qatar-signoff-content-wrap {
+		padding: 42px 0 60px
+	}
+}
+
+
+
+
+
+
+
+
+
+/*============ Content Page Styles ============*/
+
+
+
+.hero-qatar h1 {
+	line-height:1;
+}
+
+.hero-qatar .hero-text {
+	/* text-align:left; */
+	text-shadow: 1px 1px;
+}
+
+
+
+
+/* ==========================================================================
+   Offers
+   ========================================================================== */
+
+
+.offers {
+	max-width:970px;
+	margin:auto;
+	padding:0 0 90px 0
+}
+
+.offer {
+
+}
+
+.offer-img {
+	width:50%;
+	float:left;
+}
+
+.offer-text {
+	width:50%;
+	float:left;
+	padding-left: 60px;
+}
+
+p.offer-price {
+	font-weight:600;
+	font-size:1.1rem;
+	margin-bottom:36px
+}
+
+p.offer-price span {
+	text-decoration:line-through
+}
+
+.offer-text h4 {
+	text-transform:uppercase;
+	font-size:0.9rem;
+	letter-spacing:2px;
+	margin-bottom:18px
+
+}
+
+
+@media (max-width:959px) {
+	.offers {
+		max-width:80%;
+		margin:auto;
+		padding:90px 0
+	}
+
+	.offer-img {
+		width:100%;
+	}
+
+	.offer-text {
+		width:100%;
+		padding:30px 0 0 0
+	}
+}
+
+.offers-qatar {
+	padding:0 0 90px;
+	margin-top:-30px
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#page-footer {
+	color:#fff;
+	margin:20px 0 70px;
+	position:relative;
+}
+
+
+#page-footer ul {
+	position:absolute;
+	right:0px;
+	top:-10px
+}
+
+
+#page-footer li {
+	width: 60px !important;
+	float: none !important;
+	display:inline-block;
+	margin-left:15px
+}
+
+
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	background-color:#000;
+	text-align:center;
+	padding:66px 0 48px
+}
+
+footer img {
+	width: 420px;
+	margin-bottom: 24px;
+}
+
+footer p {
+	color:#fff;
+	font-size:0.7rem
+}
